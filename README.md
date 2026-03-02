@@ -1,43 +1,17 @@
-# jobsdone-web
+# FieldFlow Marketing Site
 
-Static site for jobsdone.team built with Vite.
+Customer-facing marketing site for FieldFlow — the operating system for service businesses.
 
-## Structure
+## Stack
+- Vanilla HTML/CSS/JS
+- Vite for bundling
+- Deployed via GitHub Actions → SSH to `/var/www/jobsdone`
 
-- `index.html` — Token launch page for crypto/web3 audience
-- `onboard.html` — Small business onboarding page (Variant A: clean/minimal)
-- `onboard-v2.html` — Small business onboarding page (Variant B: warm/bold)
-- `src/styles/` — CSS stylesheets
-
-## Development
-
+## Dev
 ```bash
 npm install
 npm run dev
 ```
 
-The site will be available at `http://localhost:5173`
-
-## Build
-
-```bash
-npm run build
-```
-
-Builds to `dist/` directory.
-
-## Deployment
-
-Auto-deploys to `198.71.54.203` on push to `main` via GitHub Actions.
-
-### GitHub Secrets Required
-
-| Secret | Value |
-|---|---|
-| `SERVER_HOST` | Server hostname/IP |
-| `SERVER_USER` | SSH username |
-| `SERVER_PASSWORD` | Password for SSH user |
-
-## Token name
-
-Search and replace `$JOBS` across all files to update the ticker.
+## Deploy
+Push to `master` — GitHub Actions handles the rest.
