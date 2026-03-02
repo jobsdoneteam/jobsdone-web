@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  root: '.',
   build: {
+    outDir: 'dist',
     rollupOptions: {
       input: {
-        main: 'index.html',
-        onboard: 'onboard.html',
-        onboardV2: 'onboard-v2.html'
-      }
-    }
-  }
+        main: './index.html',
+      },
+    },
+  },
 })
